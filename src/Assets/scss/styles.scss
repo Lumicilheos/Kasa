@@ -1,0 +1,32 @@
+@import "./Components/_banner.scss", "./Components/_card.scss", "./Components/_collapse.scss",
+  "./Components/_footer", "./Components/_error", "./Components/_house";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Montserrat", serif;
+}
+
+.container {
+  min-height: calc(100vh - 218px);
+  margin: 0 100px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+}
+
+.container-home {
+  margin: 0 100px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+}
