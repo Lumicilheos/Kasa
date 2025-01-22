@@ -27,5 +27,6 @@ const Carousel = ({ pictures }) => {
     </div>
   );
 };
+// try
 
 export default Carousel;
