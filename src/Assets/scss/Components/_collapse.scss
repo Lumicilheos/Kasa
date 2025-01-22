@@ -1,5 +1,4 @@
 .collapse-container {
-  border: 1px solid #ccc;
   border-radius: 5px;
   margin: 35px auto;
   overflow: hidden;
@@ -45,6 +44,7 @@
 .collapse-content.show {
   max-height: 200px;
   padding: 15px;
+  border: 1px solid #ccc;
 }
 
 .collapse-content p {

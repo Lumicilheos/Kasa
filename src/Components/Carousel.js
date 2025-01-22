@@ -19,11 +19,12 @@ const Carousel = ({ pictures }) => {
       <div className="carousel-image">
         <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} />
       </div>
-      {/* Flèche gauche */}
-      <img src={arrowLeft} alt="Previous" onClick={handlePrev} className="arrowLeft" />
-
-      {/* Flèche droite */}
-      <img src={arrowRight} alt="Next" onClick={handleNext} className="arrowRight" />
+      {pictures.length > 1 && (
+        <>
+          <img src={arrowLeft} alt="Précédent" onClick={handlePrev} className="arrowLeft" />
+          <img src={arrowRight} alt="Suivant" onClick={handleNext} className="arrowRight" />
+        </>
+      )}
     </div>
   );
 };
